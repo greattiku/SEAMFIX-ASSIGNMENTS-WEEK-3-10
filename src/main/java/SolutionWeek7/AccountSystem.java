@@ -1,5 +1,7 @@
 package SolutionWeek7;
 
+import SolutionWeek10.InputErrorException;
+
 import java.time.Duration;
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -104,7 +106,6 @@ public class AccountSystem extends FixedAccount {
             default:
                 throw new InputMismatchException("Unexpected value: input should be between 90, 180, 365");
         }
-
 
         System.out.println("Computing result...");
 
