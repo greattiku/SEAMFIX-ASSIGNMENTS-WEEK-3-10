@@ -1,15 +1,16 @@
 package SolutionWeek4;
 
-public class Applicant {
-    String Name;
+public class Applicant extends Person{
+    private int applicantID;
 
-    int Age;
-
-    public String getName() {
-        return Name;
+    public Applicant(int applicantID, String name, int age){
+        super(name, age);
+        this.applicantID= applicantID;
     }
 
-    public int getAge() {
-        return Age;
-    }
+
+public void isAdmitted(){
+    System.out.println(getName() + ","+ getAge() + ", has been admitted");
+
+}
 }

@@ -12,6 +12,8 @@ public class SchoolManagementApp {
         Course Java = new Course("Java Programming Language");
         Class English =new Class("Math Class", "Daniel", "Ginika");
         Principal principal = new Principal("Great Tiku", 50);
+        Applicant ada = new Applicant(3456, "Ada", 20);
+        Applicant anna = new Applicant(7897, "anna", 15);
 
 
 
@@ -24,6 +26,8 @@ public class SchoolManagementApp {
         mathTeacher.teachCourse(math.getCourse());
         JavaTeacher.teachCourse(Java.getCourse());
         principal.expelStudent(ginika);
+        principal.admitApplicant(ada);
+        principal.admitApplicant(anna);
         English.addStudent(chris);
         System.out.println();
         System.out.println();
@@ -35,6 +39,8 @@ public class SchoolManagementApp {
         System.out.println("Student 2: " + chris.getName());
         System.out.println("Course: " + math.getCourse());
         System.out.println("Course: " + Java.getCourse());
+        System.out.println("Principal: " + principal.getName());
+        System.out.println("Applicant: " + ada.getName());
 
 
     }

@@ -1,13 +1,14 @@
 package SolutionWeek3;
 
 public class Reservation {
-        int TicketID;
+     private int TicketID;
         public Reservation(int TicketID){
             this.TicketID =TicketID;
         }
-        void showTicket(){
+     public int showTicket(){
             System.out.println("Show TicketID: " + TicketID);
-        }
+         return TicketID ;
+     }
 
         public static void main(String[] args) {
             Reservation re = new Reservation(1234);

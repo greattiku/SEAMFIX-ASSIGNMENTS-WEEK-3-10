@@ -10,14 +10,11 @@ public class User {
     private List<Book> borrowBooks;
     private List<Book> favoriteBooks;
 
-//    public List<SolutionWeek5.Book> getBorrowBooks() {
-//        return borrowBooks;
-//    }
 
     public  User(String name){
         this.name=name;
-        borrowBooks= new ArrayList<>();
-        favoriteBooks=new ArrayList<>();
+        this.borrowBooks= new ArrayList<>();
+        this.favoriteBooks=new ArrayList<>();
     }
     public String getName(){
         return name;
@@ -31,17 +28,18 @@ public class User {
     }
 
     //@Override
-    public void returnBook(Book book) {
+    public Book returnBook(Book book) {
         borrowBooks.remove(book);
         System.out.println("The book "+ book.getTitle() + " has been returned by " + getName());
+   return book;
     }
 
- public void addFavorite(Book book){
+
+    public Book addFavorite(Book book){
         favoriteBooks.add(book);
      System.out.println("The book "+ book.getTitle() + " authored by " + book.getAuthor() + " has been removed from " + getName() + " favorite books.");
- }
-
-
+ return  book;
+    }
 
     public void removeFavorite(Book book) {
         favoriteBooks.remove(book);

@@ -1,15 +1,15 @@
 package SolutionWeek8;
 
 public class Books {
-    String authorName;
-    String title;
-    int price;
-    int stock;
-    String softwareVersion;
-    String softwareName;
-    int pageNumber;
-    String hardwareCategory;
-    String publisher;
+   private  String authorName;
+    private String title;
+    private int price;
+    private int stock;
+    private String softwareVersion;
+    private String softwareName;
+    private int pageNumber;
+    private String hardwareCategory;
+    private String publisher;
 
 
 

@@ -18,7 +18,7 @@ public class Principal extends Person {
 
         if (applicant.getAge() >= 18) {
 
-            System.out.println(applicant.getName() + "has been admitted as a student.");
+            System.out.println(applicant.getName() + " has been admitted as a student.");
 
         } else {
 

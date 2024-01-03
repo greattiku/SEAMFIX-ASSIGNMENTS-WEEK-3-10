@@ -10,12 +10,6 @@ public class FixedAccount  {
     double Principal;
     double interestRate;
 
-//    public FixedAccount(double savingsBalance, int interest, int accountNo, String accountHolder, int duration, double principal, double interestRate) {
-//        super(savingsBalance, interest, accountNo, accountHolder, duration);
-//        Principal = principal;
-//        this.interestRate = interestRate;
-    //  }
-
 
 
     public int getAccountNo() {
